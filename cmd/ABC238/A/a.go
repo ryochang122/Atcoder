@@ -1,13 +1,17 @@
 package main
 
-import(
-  "fmt"
+import (
+	"fmt"
+	"math"
 )
 
 func main(){
-  a()
+  var a float64
+  fmt.Scan(&a)
+  if math.Pow(2,a) > math.Pow(a,2) {
+    fmt.Println("Yes")
+  }else{
+    fmt.Println("No")
+  }
 }
 
-func a(){
-  fmt.Println("this is method a")
-}
